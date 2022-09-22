@@ -1,0 +1,152 @@
+[2022-09-21T21:18:31.303+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T21:18:26.727783+00:00 [queued]>
+[2022-09-21T21:18:31.310+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T21:18:26.727783+00:00 [queued]>
+[2022-09-21T21:18:31.310+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T21:18:31.310+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-21T21:18:31.310+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T21:18:31.322+0000] {taskinstance.py:1389} INFO - Executing <Task(OddsCollectorOperator): odds_collector_task> on 2022-09-21 21:18:26.727783+00:00
+[2022-09-21T21:18:31.328+0000] {standard_task_runner.py:52} INFO - Started process 95 to run task
+[2022-09-21T21:18:31.330+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'match_assembler', 'odds_collector_task', 'manual__2022-09-21T21:18:26.727783+00:00', '--job-id', '363', '--raw', '--subdir', 'DAGS_FOLDER/snitch/dag_builder.py', '--cfg-path', '/tmp/tmpnexosh3_', '--error-file', '/tmp/tmpluxuxyah']
+[2022-09-21T21:18:31.330+0000] {standard_task_runner.py:80} INFO - Job 363: Subtask odds_collector_task
+[2022-09-21T21:18:31.373+0000] {task_command.py:371} INFO - Running <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T21:18:26.727783+00:00 [running]> on host b54a50e1bd9a
+[2022-09-21T21:18:31.445+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bookly.beekly@gmail.com
+AIRFLOW_CTX_DAG_OWNER=bookly
+AIRFLOW_CTX_DAG_ID=match_assembler
+AIRFLOW_CTX_TASK_ID=odds_collector_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-21T21:18:26.727783+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-21T21:18:26.727783+00:00
+[2022-09-21T21:18:31.451+0000] {log.py:148} INFO - Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T21:18:31.452+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.utils.log] INFO: Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T21:18:31.452+0000] {log.py:154} INFO - Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T21:18:31.452+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T21:18:31.455+0000] {crawler.py:61} INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T21:18:31.455+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T21:18:31.457+0000] {log.py:159} DEBUG - Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T21:18:31.457+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T21:18:31.466+0000] {telnet.py:55} INFO - Telnet Password: ba852ac0046afc36
+[2022-09-21T21:18:31.467+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.extensions.telnet] INFO: Telnet Password: ba852ac0046afc36
+[2022-09-21T21:18:31.474+0000] {middleware.py:54} INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T21:18:31.474+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T21:18:31.504+0000] {middleware.py:54} INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T21:18:31.504+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T21:18:31.506+0000] {middleware.py:54} INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T21:18:31.506+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T21:18:31.506+0000] {middleware.py:54} INFO - Enabled item pipelines:
+[]
+[2022-09-21T21:18:31.506+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[2022-09-21T21:18:31.506+0000] {engine.py:316} INFO - Spider opened
+[2022-09-21T21:18:31.506+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.core.engine] INFO: Spider opened
+[2022-09-21T21:18:31.704+0000] {logstats.py:48} INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T21:18:31.704+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T21:18:31.705+0000] {telnet.py:69} INFO - Telnet console listening on 127.0.0.1:6023
+[2022-09-21T21:18:31.705+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2022-09-21T21:18:31.706+0000] {engine.py:157} ERROR - Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/scrapy/core/engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 37, in start_requests
+    with open(f"{self.file_path}/{self.source_matches_filename}", 'r') as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lyk/PyCharmProjects/test_proj/dags/data.yml'
+[2022-09-21T21:18:31.706+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.7/site-packages/scrapy/core/engine.py", line 152, in _next_request
+    request = next(self.slot.start_requests)
+  File "/opt/***/dags/snitch/scrapers/odds_collector.py", line 37, in start_requests
+    with open(f"{self.file_path}/{self.source_matches_filename}", 'r') as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lyk/PyCharmProjects/test_proj/dags/data.yml'
+[2022-09-21T21:18:31.706+0000] {engine.py:361} INFO - Closing spider (finished)
+[2022-09-21T21:18:31.706+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-09-21T21:18:31.809+0000] {signal.py:57} ERROR - Error caught on signal handler: <function Spider.close at 0x7f5234e219e0>
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/airflow/.local/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 84, in close
+    return closed(reason)
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 56, in closed
+    with open(f"{self.file_path}/{self.output_file_name}", 'w') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lyk/PyCharmProjects/test_proj/dags/final_data.yml'
+[2022-09-21T21:18:31.811+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.utils.signal] ERROR: Error caught on signal handler: <function Spider.close at 0x7f5234e219e0>
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.7/site-packages/scrapy/utils/defer.py", line 169, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/***/.local/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/***/.local/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 84, in close
+    return closed(reason)
+  File "/opt/***/dags/snitch/scrapers/odds_collector.py", line 56, in closed
+    with open(f"{self.file_path}/{self.output_file_name}", 'w') as outfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lyk/PyCharmProjects/test_proj/dags/final_data.yml'
+[2022-09-21T21:18:31.811+0000] {statscollectors.py:47} INFO - Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.002706,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 21, 18, 31, 707016),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'memusage/max': 265523200,
+ 'memusage/startup': 265523200,
+ 'start_time': datetime.datetime(2022, 9, 21, 21, 18, 31, 704310)}
+[2022-09-21T21:18:31.811+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.002706,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 21, 18, 31, 707016),
+ 'log_count/DEBUG': 1,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 10,
+ 'memusage/max': 265523200,
+ 'memusage/startup': 265523200,
+ 'start_time': datetime.datetime(2022, 9, 21, 21, 18, 31, 704310)}
+[2022-09-21T21:18:31.812+0000] {engine.py:388} INFO - Spider closed (finished)
+[2022-09-21T21:18:31.812+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:18:31 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-09-21T21:18:31.812+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-21T21:18:31.822+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=match_assembler, task_id=odds_collector_task, execution_date=20220921T211826, start_date=20220921T211831, end_date=20220921T211831
+[2022-09-21T21:18:31.862+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-21T21:18:31.938+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

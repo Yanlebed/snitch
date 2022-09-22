@@ -1,0 +1,1163 @@
+[2022-09-18T20:50:59.505+0000] {processor.py:153} INFO - Started process (PID=8693) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:50:59.505+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:50:59.505+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:50:59.505+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:50:59.913+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:50:59.913+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:50:59.913+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:50:59.928+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.425 seconds
+[2022-09-18T20:51:30.024+0000] {processor.py:153} INFO - Started process (PID=8723) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:51:30.024+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:51:30.025+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:51:30.024+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:51:30.440+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:51:30.440+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:51:30.440+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:51:30.455+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.433 seconds
+[2022-09-18T20:52:00.547+0000] {processor.py:153} INFO - Started process (PID=8753) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:00.548+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:52:00.548+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:52:00.548+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:00.973+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:52:00.973+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:52:00.974+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:00.987+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.441 seconds
+[2022-09-18T20:52:31.085+0000] {processor.py:153} INFO - Started process (PID=8782) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:31.087+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:52:31.087+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:52:31.087+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:31.495+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:52:31.494+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:52:31.495+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:52:31.508+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.424 seconds
+[2022-09-18T20:53:02.016+0000] {processor.py:153} INFO - Started process (PID=8803) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:02.017+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:53:02.017+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:02.017+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:02.434+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:02.434+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:53:02.434+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:02.447+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.433 seconds
+[2022-09-18T20:53:19.509+0000] {processor.py:153} INFO - Started process (PID=8823) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:19.510+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:53:19.511+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:19.510+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:19.968+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:19.967+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:53:19.968+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:19.982+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.479 seconds
+[2022-09-18T20:53:48.484+0000] {processor.py:153} INFO - Started process (PID=8853) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:48.485+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:53:48.485+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:48.485+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:48.992+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:53:48.991+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:53:48.992+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:53:49.006+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.524 seconds
+[2022-09-18T20:54:19.567+0000] {processor.py:153} INFO - Started process (PID=8874) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:19.568+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:54:19.569+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:54:19.569+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:19.968+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:54:19.968+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:54:19.968+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:19.981+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.415 seconds
+[2022-09-18T20:54:50.061+0000] {processor.py:153} INFO - Started process (PID=8904) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:50.062+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:54:50.062+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:54:50.062+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:50.466+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:54:50.465+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:54:50.466+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:54:50.480+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.420 seconds
+[2022-09-18T20:55:20.616+0000] {processor.py:153} INFO - Started process (PID=8933) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:20.617+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:55:20.617+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:55:20.617+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:21.018+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:55:21.018+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:55:21.019+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:21.032+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.418 seconds
+[2022-09-18T20:55:51.582+0000] {processor.py:153} INFO - Started process (PID=8963) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:51.583+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:55:51.584+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:55:51.584+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:51.999+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:55:51.999+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:55:51.999+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:55:52.013+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.432 seconds
+[2022-09-18T20:56:07.563+0000] {processor.py:153} INFO - Started process (PID=8974) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:07.565+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:56:07.565+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:56:07.565+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:08.003+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:56:08.003+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:56:08.003+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:08.017+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.455 seconds
+[2022-09-18T20:56:38.545+0000] {processor.py:153} INFO - Started process (PID=9004) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:38.546+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:56:38.546+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:56:38.546+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:38.953+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:56:38.952+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:56:38.953+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:56:38.967+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.424 seconds
+[2022-09-18T20:57:09.072+0000] {processor.py:153} INFO - Started process (PID=9034) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:09.072+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:57:09.073+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:57:09.073+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:09.521+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:57:09.521+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:57:09.522+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:09.535+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.465 seconds
+[2022-09-18T20:57:40.108+0000] {processor.py:153} INFO - Started process (PID=9055) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:40.109+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:57:40.109+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:57:40.109+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:40.520+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:57:40.520+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:57:40.520+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:57:40.534+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.427 seconds
+[2022-09-18T20:58:10.634+0000] {processor.py:153} INFO - Started process (PID=9085) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:10.635+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:58:10.636+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:58:10.636+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:11.049+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:58:11.049+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:58:11.050+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:11.063+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.430 seconds
+[2022-09-18T20:58:41.590+0000] {processor.py:153} INFO - Started process (PID=9115) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:41.591+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:58:41.591+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:58:41.591+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:41.990+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:58:41.990+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:58:41.990+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:58:42.003+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.415 seconds
+[2022-09-18T20:59:12.136+0000] {processor.py:153} INFO - Started process (PID=9145) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:12.138+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:59:12.138+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:59:12.138+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:12.560+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:59:12.559+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:59:12.560+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:12.573+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.439 seconds
+[2022-09-18T20:59:43.006+0000] {processor.py:153} INFO - Started process (PID=9166) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:43.007+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T20:59:43.008+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:59:43.008+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:43.417+0000] {logging_mixin.py:115} INFO - [2022-09-18T20:59:43.417+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T20:59:43.418+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T20:59:43.430+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.426 seconds
+[2022-09-18T21:00:13.573+0000] {processor.py:153} INFO - Started process (PID=9196) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:13.575+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:00:13.575+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:00:13.575+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:13.981+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:00:13.980+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:00:13.981+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:13.994+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.422 seconds
+[2022-09-18T21:00:44.471+0000] {processor.py:153} INFO - Started process (PID=9226) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:44.473+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:00:44.475+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:00:44.475+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:44.893+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:00:44.893+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:00:44.894+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:00:44.908+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.445 seconds
+[2022-09-18T21:01:15.398+0000] {processor.py:153} INFO - Started process (PID=9256) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:15.399+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:01:15.400+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:01:15.399+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:15.793+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:01:15.793+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:01:15.794+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:15.807+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.411 seconds
+[2022-09-18T21:01:45.894+0000] {processor.py:153} INFO - Started process (PID=9277) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:45.895+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:01:45.896+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:01:45.896+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:46.303+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:01:46.302+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:01:46.303+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:01:46.316+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.424 seconds
+[2022-09-18T21:02:16.814+0000] {processor.py:153} INFO - Started process (PID=9307) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:16.815+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:02:16.815+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:02:16.815+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:17.212+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:02:17.212+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:02:17.212+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:17.225+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.412 seconds
+[2022-09-18T21:02:47.451+0000] {processor.py:153} INFO - Started process (PID=9337) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:47.452+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:02:47.453+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:02:47.453+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:47.850+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:02:47.850+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:02:47.851+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:02:47.864+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.414 seconds
+[2022-09-18T21:03:18.269+0000] {processor.py:153} INFO - Started process (PID=9367) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:18.270+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:03:18.271+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:03:18.271+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:18.663+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:03:18.662+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:03:18.663+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:18.676+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.409 seconds
+[2022-09-18T21:03:48.878+0000] {processor.py:153} INFO - Started process (PID=9388) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:48.879+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:03:48.880+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:03:48.880+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:49.274+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:03:49.273+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:03:49.274+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:03:49.287+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.411 seconds
+[2022-09-18T21:04:19.679+0000] {processor.py:153} INFO - Started process (PID=9418) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:19.680+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:04:19.680+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:04:19.680+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:20.074+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:04:20.073+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:04:20.074+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:20.087+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.410 seconds
+[2022-09-18T21:04:50.393+0000] {processor.py:153} INFO - Started process (PID=9448) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:50.394+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:04:50.394+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:04:50.394+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:50.791+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:04:50.790+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:04:50.791+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:04:50.804+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.413 seconds
+[2022-09-18T21:05:21.122+0000] {processor.py:153} INFO - Started process (PID=9478) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:21.123+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:05:21.123+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:05:21.123+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:21.527+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:05:21.527+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:05:21.528+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:21.540+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.420 seconds
+[2022-09-18T21:05:51.808+0000] {processor.py:153} INFO - Started process (PID=9499) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:51.809+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:05:51.810+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:05:51.810+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:52.196+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:05:52.196+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:05:52.197+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:05:52.210+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.403 seconds
+[2022-09-18T21:06:22.701+0000] {processor.py:153} INFO - Started process (PID=9529) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:22.703+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:06:22.703+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:06:22.703+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:23.093+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:06:23.092+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:06:23.093+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:23.106+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.408 seconds
+[2022-09-18T21:06:53.191+0000] {processor.py:153} INFO - Started process (PID=9559) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:53.192+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:06:53.192+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:06:53.192+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:53.582+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:06:53.581+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:06:53.582+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:06:53.595+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.406 seconds
+[2022-09-18T21:07:23.704+0000] {processor.py:153} INFO - Started process (PID=9589) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:23.705+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:07:23.705+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:07:23.705+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:24.113+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:07:24.113+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:07:24.113+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:24.127+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.425 seconds
+[2022-09-18T21:07:54.615+0000] {processor.py:153} INFO - Started process (PID=9610) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:54.616+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:07:54.617+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:07:54.616+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:55.049+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:07:55.049+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:07:55.049+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:07:55.063+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.449 seconds
+[2022-09-18T21:08:25.141+0000] {processor.py:153} INFO - Started process (PID=9640) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:25.142+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:08:25.142+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:08:25.142+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:25.529+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:08:25.528+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:08:25.529+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:25.541+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.402 seconds
+[2022-09-18T21:08:55.652+0000] {processor.py:153} INFO - Started process (PID=9670) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:55.654+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:08:55.654+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:08:55.654+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:56.055+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:08:56.055+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:08:56.055+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:08:56.069+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.418 seconds
+[2022-09-18T21:09:26.599+0000] {processor.py:153} INFO - Started process (PID=9699) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:26.600+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:09:26.601+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:09:26.601+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:26.983+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:09:26.983+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:09:26.984+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:26.997+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.400 seconds
+[2022-09-18T21:09:57.118+0000] {processor.py:153} INFO - Started process (PID=9727) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:57.119+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:09:57.119+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:09:57.119+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:57.531+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:09:57.531+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:09:57.532+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:09:57.545+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.429 seconds
+[2022-09-18T21:10:28.042+0000] {processor.py:153} INFO - Started process (PID=9750) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:28.043+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:10:28.043+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:10:28.043+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:28.448+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:10:28.447+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:10:28.448+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:28.466+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.426 seconds
+[2022-09-18T21:10:58.552+0000] {processor.py:153} INFO - Started process (PID=9779) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:58.553+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:10:58.554+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:10:58.554+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:58.977+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:10:58.977+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:10:58.977+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:10:58.990+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.439 seconds
+[2022-09-18T21:11:29.452+0000] {processor.py:153} INFO - Started process (PID=9809) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:11:29.453+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:11:29.454+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:11:29.454+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:11:29.871+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:11:29.870+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:11:29.871+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:11:29.884+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.434 seconds
+[2022-09-18T21:12:00.011+0000] {processor.py:153} INFO - Started process (PID=9839) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:00.011+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:12:00.011+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:12:00.011+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:00.440+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:12:00.439+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:12:00.440+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:00.452+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.443 seconds
+[2022-09-18T21:12:30.919+0000] {processor.py:153} INFO - Started process (PID=9860) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:30.919+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:12:30.920+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:12:30.920+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:31.340+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:12:31.340+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:12:31.340+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:12:31.352+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.435 seconds
+[2022-09-18T21:13:01.476+0000] {processor.py:153} INFO - Started process (PID=9890) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:01.477+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:13:01.477+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:13:01.477+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:01.880+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:13:01.880+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:13:01.881+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:01.894+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.420 seconds
+[2022-09-18T21:13:31.995+0000] {processor.py:153} INFO - Started process (PID=9920) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:31.997+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:13:31.999+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:13:31.999+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:32.441+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:13:32.441+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:13:32.442+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:13:32.454+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.468 seconds
+[2022-09-18T21:14:02.925+0000] {processor.py:153} INFO - Started process (PID=9950) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:02.926+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:14:02.927+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:14:02.926+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:03.341+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:14:03.341+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:14:03.341+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:03.354+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.431 seconds
+[2022-09-18T21:14:33.533+0000] {processor.py:153} INFO - Started process (PID=9971) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:33.533+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:14:33.534+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:14:33.534+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:34.000+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:14:34.000+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:14:34.000+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:14:34.013+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.483 seconds
+[2022-09-18T21:15:04.434+0000] {processor.py:153} INFO - Started process (PID=10001) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:04.437+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:15:04.438+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:04.438+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:04.879+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:04.878+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:15:04.879+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:04.892+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.466 seconds
+[2022-09-18T21:15:35.191+0000] {processor.py:153} INFO - Started process (PID=10031) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:35.192+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:15:35.193+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:35.193+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:35.625+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:35.624+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:15:35.625+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:35.638+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.451 seconds
+[2022-09-18T21:15:38.656+0000] {processor.py:153} INFO - Started process (PID=10032) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:38.657+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:15:38.657+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:38.657+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:39.080+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:15:39.080+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:15:39.081+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:15:39.094+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.441 seconds
+[2022-09-18T21:16:06.595+0000] {processor.py:153} INFO - Started process (PID=10062) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:06.596+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:16:06.596+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:16:06.596+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:07.019+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:16:07.019+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:16:07.019+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:07.032+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.439 seconds
+[2022-09-18T21:16:37.134+0000] {processor.py:153} INFO - Started process (PID=10083) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:37.135+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:16:37.135+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:16:37.135+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:37.551+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:16:37.551+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:16:37.552+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:16:37.566+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.434 seconds
+[2022-09-18T21:17:07.655+0000] {processor.py:153} INFO - Started process (PID=10113) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:07.656+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:17:07.656+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:17:07.656+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:08.061+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:17:08.061+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:17:08.062+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:08.075+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.422 seconds
+[2022-09-18T21:17:38.171+0000] {processor.py:153} INFO - Started process (PID=10143) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:38.172+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:17:38.172+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:17:38.172+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:38.593+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:17:38.593+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:17:38.593+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:17:38.606+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.437 seconds
+[2022-09-18T21:18:08.738+0000] {processor.py:153} INFO - Started process (PID=10174) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:08.739+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:18:08.740+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:08.739+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:09.163+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:09.162+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:18:09.163+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:09.176+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.440 seconds
+[2022-09-18T21:18:39.269+0000] {processor.py:153} INFO - Started process (PID=10195) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:39.271+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:18:39.273+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:39.272+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:39.718+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:39.718+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:18:39.718+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:39.731+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.469 seconds
+[2022-09-18T21:18:40.745+0000] {processor.py:153} INFO - Started process (PID=10196) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:40.746+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:18:40.746+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:40.746+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:41.195+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:18:41.194+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:18:41.195+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:18:41.209+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.465 seconds
+[2022-09-18T21:19:11.728+0000] {processor.py:153} INFO - Started process (PID=10226) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:11.729+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:19:11.729+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:19:11.729+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:12.163+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:19:12.163+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:19:12.164+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:12.176+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.451 seconds
+[2022-09-18T21:19:42.389+0000] {processor.py:153} INFO - Started process (PID=10257) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:42.391+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:19:42.393+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:19:42.393+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:42.827+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:19:42.827+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:19:42.828+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:19:42.847+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.467 seconds
+[2022-09-18T21:20:13.202+0000] {processor.py:153} INFO - Started process (PID=10287) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:13.203+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:20:13.203+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:20:13.203+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:13.639+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:20:13.639+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:20:13.639+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:13.652+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.452 seconds
+[2022-09-18T21:20:33.713+0000] {processor.py:153} INFO - Started process (PID=10307) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:33.714+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:20:33.714+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:20:33.714+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:34.208+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:20:34.208+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:20:34.208+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:20:34.225+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.514 seconds
+[2022-09-18T21:21:04.912+0000] {processor.py:153} INFO - Started process (PID=10328) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:04.915+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:21:04.916+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:21:04.916+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:05.352+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:21:05.352+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:21:05.352+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:05.366+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.461 seconds
+[2022-09-18T21:21:35.466+0000] {processor.py:153} INFO - Started process (PID=10358) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:35.468+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:21:35.469+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:21:35.469+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:35.895+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:21:35.895+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:21:35.895+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:21:35.908+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.450 seconds
+[2022-09-18T21:22:06.010+0000] {processor.py:153} INFO - Started process (PID=10388) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:06.011+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:22:06.011+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:22:06.011+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:06.445+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:22:06.445+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:22:06.445+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:06.459+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.452 seconds
+[2022-09-18T21:22:36.977+0000] {processor.py:153} INFO - Started process (PID=10418) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:36.978+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:22:36.978+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:22:36.978+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:37.454+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:22:37.454+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:22:37.455+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:22:37.470+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.495 seconds
+[2022-09-18T21:23:07.586+0000] {processor.py:153} INFO - Started process (PID=10439) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:07.588+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:23:07.589+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:07.589+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:08.014+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:08.014+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 12, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:23:08.014+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:08.027+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.445 seconds
+[2022-09-18T21:23:24.501+0000] {processor.py:153} INFO - Started process (PID=10461) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:24.502+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:23:24.502+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:24.502+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:24.972+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:24.972+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:23:24.972+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:24.985+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.487 seconds
+[2022-09-18T21:23:55.069+0000] {processor.py:153} INFO - Started process (PID=10491) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:55.070+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:23:55.070+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:55.070+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:55.527+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:23:55.527+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:23:55.528+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:23:55.541+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.473 seconds
+[2022-09-18T21:24:25.630+0000] {processor.py:153} INFO - Started process (PID=10512) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:25.631+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:24:25.631+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:24:25.631+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:26.045+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:24:26.045+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:24:26.046+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:26.061+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.433 seconds
+[2022-09-18T21:24:56.154+0000] {processor.py:153} INFO - Started process (PID=10542) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:56.154+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:24:56.155+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:24:56.155+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:56.564+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:24:56.564+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:24:56.564+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:24:56.579+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.427 seconds
+[2022-09-18T21:25:26.709+0000] {processor.py:153} INFO - Started process (PID=10572) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:25:26.711+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:25:26.712+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:25:26.712+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:25:27.164+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:25:27.163+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/scrapers/odds_collector.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/scrapers/odds_collector.py", line 9, in <module>
+    from dags.snitch.utils import check_for_favorite
+ModuleNotFoundError: No module named 'dags'
+[2022-09-18T21:25:27.164+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:25:27.177+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.476 seconds
+[2022-09-18T21:28:54.160+0000] {processor.py:153} INFO - Started process (PID=56) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:28:54.161+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:28:54.161+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:28:54.161+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:28:54.805+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:28:54.820+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.662 seconds
+[2022-09-18T21:29:24.946+0000] {processor.py:153} INFO - Started process (PID=77) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:24.947+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:29:24.947+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:29:24.947+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:25.429+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:25.437+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.492 seconds
+[2022-09-18T21:29:55.539+0000] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:55.540+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:29:55.540+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:29:55.540+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:55.979+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:29:55.987+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.449 seconds
+[2022-09-18T21:35:33.953+0000] {processor.py:153} INFO - Started process (PID=56) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:35:33.954+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:35:33.954+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:35:33.954+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:35:34.616+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:35:34.626+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.675 seconds
+[2022-09-18T21:36:05.053+0000] {processor.py:153} INFO - Started process (PID=78) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:05.053+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:36:05.054+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:36:05.053+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:05.509+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:05.517+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.466 seconds
+[2022-09-18T21:36:35.597+0000] {processor.py:153} INFO - Started process (PID=108) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:35.598+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:36:35.598+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:36:35.598+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:36.031+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:36:36.039+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.443 seconds
+[2022-09-18T21:37:06.131+0000] {processor.py:153} INFO - Started process (PID=138) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:06.132+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:37:06.132+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:37:06.132+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:06.550+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:06.557+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.428 seconds
+[2022-09-18T21:37:36.656+0000] {processor.py:153} INFO - Started process (PID=168) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:36.656+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:37:36.657+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:37:36.656+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:37.089+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:37:37.098+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.444 seconds
+[2022-09-18T21:39:08.902+0000] {processor.py:153} INFO - Started process (PID=56) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:08.903+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:39:08.903+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:39:08.903+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:09.394+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:09.402+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.502 seconds
+[2022-09-18T21:39:39.526+0000] {processor.py:153} INFO - Started process (PID=77) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:39.527+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:39:39.527+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:39:39.527+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:39.975+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:39:39.983+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.459 seconds
+[2022-09-18T21:40:10.046+0000] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:40:10.046+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:40:10.047+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:40:10.047+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:40:10.496+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:40:10.504+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.460 seconds
+[2022-09-18T21:41:35.626+0000] {processor.py:153} INFO - Started process (PID=56) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:41:35.626+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:41:35.627+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:41:35.627+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:41:36.140+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:41:36.148+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.525 seconds
+[2022-09-18T21:42:06.203+0000] {processor.py:153} INFO - Started process (PID=77) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:06.203+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:42:06.204+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:42:06.204+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:06.685+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:06.693+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.492 seconds
+[2022-09-18T21:42:36.797+0000] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:36.798+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:42:36.799+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:42:36.799+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:37.253+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:42:37.260+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.469 seconds
+[2022-09-18T21:43:07.873+0000] {processor.py:153} INFO - Started process (PID=137) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:07.873+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:43:07.874+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:43:07.874+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:08.314+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:08.322+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.450 seconds
+[2022-09-18T21:43:38.415+0000] {processor.py:153} INFO - Started process (PID=167) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:38.416+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:43:38.416+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:43:38.416+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:38.835+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:43:38.844+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.430 seconds
+[2022-09-18T21:44:08.944+0000] {processor.py:153} INFO - Started process (PID=188) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:08.945+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:44:08.945+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:44:08.945+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:09.380+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:09.388+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.446 seconds
+[2022-09-18T21:44:39.484+0000] {processor.py:153} INFO - Started process (PID=218) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:39.484+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:44:39.485+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:44:39.485+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:39.896+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:44:39.904+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.422 seconds
+[2022-09-18T21:45:10.005+0000] {processor.py:153} INFO - Started process (PID=249) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:10.005+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:45:10.006+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:45:10.006+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:10.435+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:10.443+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.440 seconds
+[2022-09-18T21:45:40.574+0000] {processor.py:153} INFO - Started process (PID=279) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:40.575+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:45:40.577+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:45:40.577+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:41.023+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:45:41.032+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.467 seconds
+[2022-09-18T21:46:11.142+0000] {processor.py:153} INFO - Started process (PID=300) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:11.144+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:46:11.146+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:46:11.145+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:11.578+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:11.586+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.453 seconds
+[2022-09-18T21:46:42.127+0000] {processor.py:153} INFO - Started process (PID=330) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:42.128+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:46:42.130+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:46:42.130+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:42.588+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:46:42.599+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.480 seconds
+[2022-09-18T21:47:12.699+0000] {processor.py:153} INFO - Started process (PID=359) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:12.700+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:47:12.701+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:47:12.701+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:13.139+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:13.147+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.451 seconds
+[2022-09-18T21:47:43.250+0000] {processor.py:153} INFO - Started process (PID=389) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:43.250+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:47:43.251+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:47:43.251+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:43.659+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:47:43.667+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.419 seconds
+[2022-09-18T21:48:13.764+0000] {processor.py:153} INFO - Started process (PID=410) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:13.765+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:48:13.765+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:48:13.765+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:14.166+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:14.174+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.412 seconds
+[2022-09-18T21:48:44.285+0000] {processor.py:153} INFO - Started process (PID=440) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:44.286+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:48:44.287+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:48:44.287+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:44.749+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:48:44.758+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.480 seconds
+[2022-09-18T21:49:14.864+0000] {processor.py:153} INFO - Started process (PID=470) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:14.865+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:49:14.865+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:49:14.865+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:15.271+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:15.279+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.416 seconds
+[2022-09-18T21:49:45.382+0000] {processor.py:153} INFO - Started process (PID=500) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:45.383+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:49:45.383+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:49:45.383+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:45.795+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:49:45.804+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.424 seconds
+[2022-09-18T21:50:15.885+0000] {processor.py:153} INFO - Started process (PID=521) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:15.886+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:50:15.886+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:50:15.886+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:16.322+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:16.330+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.446 seconds
+[2022-09-18T21:50:46.422+0000] {processor.py:153} INFO - Started process (PID=551) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:46.423+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:50:46.423+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:50:46.423+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:46.838+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:50:46.846+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.425 seconds
+[2022-09-18T21:51:16.937+0000] {processor.py:153} INFO - Started process (PID=581) to work on /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:51:16.938+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/scrapers/odds_collector.py for tasks to queue
+[2022-09-18T21:51:16.938+0000] {logging_mixin.py:115} INFO - [2022-09-18T21:51:16.938+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:51:17.360+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/scrapers/odds_collector.py
+[2022-09-18T21:51:17.368+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/scrapers/odds_collector.py took 0.432 seconds

@@ -1,0 +1,6 @@
+Scrapy==2.1
+Twisted==20.3.0
+apache-airflow
+httplib2
+apiclient
+PyYAML

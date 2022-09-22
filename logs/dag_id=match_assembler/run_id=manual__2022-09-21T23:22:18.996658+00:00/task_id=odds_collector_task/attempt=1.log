@@ -1,0 +1,168 @@
+[2022-09-21T23:22:25.619+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T23:22:18.996658+00:00 [queued]>
+[2022-09-21T23:22:25.628+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T23:22:18.996658+00:00 [queued]>
+[2022-09-21T23:22:25.628+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T23:22:25.628+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-21T23:22:25.628+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T23:22:25.642+0000] {taskinstance.py:1389} INFO - Executing <Task(OddsCollectorOperator): odds_collector_task> on 2022-09-21 23:22:18.996658+00:00
+[2022-09-21T23:22:25.647+0000] {standard_task_runner.py:52} INFO - Started process 95 to run task
+[2022-09-21T23:22:25.648+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'match_assembler', 'odds_collector_task', 'manual__2022-09-21T23:22:18.996658+00:00', '--job-id', '384', '--raw', '--subdir', 'DAGS_FOLDER/snitch/dag_builder.py', '--cfg-path', '/tmp/tmps056tuxr', '--error-file', '/tmp/tmpadalamav']
+[2022-09-21T23:22:25.649+0000] {standard_task_runner.py:80} INFO - Job 384: Subtask odds_collector_task
+[2022-09-21T23:22:25.692+0000] {task_command.py:371} INFO - Running <TaskInstance: match_assembler.odds_collector_task manual__2022-09-21T23:22:18.996658+00:00 [running]> on host 0f5dc8100c36
+[2022-09-21T23:22:25.748+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bookly.beekly@gmail.com
+AIRFLOW_CTX_DAG_OWNER=bookly
+AIRFLOW_CTX_DAG_ID=match_assembler
+AIRFLOW_CTX_TASK_ID=odds_collector_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-21T23:22:18.996658+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-21T23:22:18.996658+00:00
+[2022-09-21T23:22:25.865+0000] {log.py:148} INFO - Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T23:22:25.865+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.utils.log] INFO: Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T23:22:25.865+0000] {log.py:154} INFO - Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T23:22:25.866+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T23:22:25.868+0000] {crawler.py:61} INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T23:22:25.868+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T23:22:25.870+0000] {log.py:159} DEBUG - Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T23:22:25.870+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T23:22:25.879+0000] {telnet.py:55} INFO - Telnet Password: b5562313d25c979e
+[2022-09-21T23:22:25.879+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.extensions.telnet] INFO: Telnet Password: b5562313d25c979e
+[2022-09-21T23:22:25.887+0000] {middleware.py:54} INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T23:22:25.887+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T23:22:25.915+0000] {middleware.py:54} INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T23:22:25.915+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T23:22:25.917+0000] {middleware.py:54} INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T23:22:25.917+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T23:22:25.917+0000] {middleware.py:54} INFO - Enabled item pipelines:
+[]
+[2022-09-21T23:22:25.917+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[2022-09-21T23:22:25.917+0000] {engine.py:316} INFO - Spider opened
+[2022-09-21T23:22:25.917+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:25 [scrapy.core.engine] INFO: Spider opened
+[2022-09-21T23:22:26.138+0000] {logstats.py:48} INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T23:22:26.138+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T23:22:26.139+0000] {telnet.py:69} INFO - Telnet console listening on 127.0.0.1:6023
+[2022-09-21T23:22:26.139+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2022-09-21T23:22:26.289+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/0YPyseeI/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.289+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/0YPyseeI/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.396+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/4AriaNG8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.396+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/4AriaNG8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.499+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/6ijn57s8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.500+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/6ijn57s8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.617+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/Cz8UCto8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.617+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/Cz8UCto8/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.707+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/K2jvKvch/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.707+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/K2jvKvch/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.813+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/QJqm0312/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.813+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/QJqm0312/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.903+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/UiSViu9r/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:26.903+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/UiSViu9r/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.010+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/bgkrJbCb/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.010+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/bgkrJbCb/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.158+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/fu3JGSDd/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.158+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/fu3JGSDd/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.265+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/hUgwnguA/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.265+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/hUgwnguA/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.370+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/jsHNoJtm/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.370+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/jsHNoJtm/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.479+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/lA6KnZpN/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.480+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/lA6KnZpN/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.604+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/ng0sAvVQ/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.604+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/ng0sAvVQ/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.690+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/match/prkj4RdE/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.690+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/match/prkj4RdE/?d=3&s=5> (referer: None)
+[2022-09-21T23:22:27.804+0000] {engine.py:361} INFO - Closing spider (finished)
+[2022-09-21T23:22:27.805+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-09-21T23:22:27.821+0000] {statscollectors.py:47} INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 3388,
+ 'downloader/request_count': 14,
+ 'downloader/request_method_count/GET': 14,
+ 'downloader/response_bytes': 38668,
+ 'downloader/response_count': 14,
+ 'downloader/response_status_count/200': 14,
+ 'elapsed_time_seconds': 1.668435,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 23, 22, 27, 806870),
+ 'httpcompression/response_bytes': 81079,
+ 'httpcompression/response_count': 14,
+ 'log_count/DEBUG': 15,
+ 'log_count/INFO': 10,
+ 'memusage/max': 271880192,
+ 'memusage/startup': 271880192,
+ 'response_received_count': 14,
+ 'scheduler/dequeued': 14,
+ 'scheduler/dequeued/memory': 14,
+ 'scheduler/enqueued': 14,
+ 'scheduler/enqueued/memory': 14,
+ 'start_time': datetime.datetime(2022, 9, 21, 23, 22, 26, 138435)}
+[2022-09-21T23:22:27.821+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3388,
+ 'downloader/request_count': 14,
+ 'downloader/request_method_count/GET': 14,
+ 'downloader/response_bytes': 38668,
+ 'downloader/response_count': 14,
+ 'downloader/response_status_count/200': 14,
+ 'elapsed_time_seconds': 1.668435,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 23, 22, 27, 806870),
+ 'httpcompression/response_bytes': 81079,
+ 'httpcompression/response_count': 14,
+ 'log_count/DEBUG': 15,
+ 'log_count/INFO': 10,
+ 'memusage/max': 271880192,
+ 'memusage/startup': 271880192,
+ 'response_received_count': 14,
+ 'scheduler/dequeued': 14,
+ 'scheduler/dequeued/memory': 14,
+ 'scheduler/enqueued': 14,
+ 'scheduler/enqueued/memory': 14,
+ 'start_time': datetime.datetime(2022, 9, 21, 23, 22, 26, 138435)}
+[2022-09-21T23:22:27.821+0000] {engine.py:388} INFO - Spider closed (finished)
+[2022-09-21T23:22:27.821+0000] {logging_mixin.py:115} WARNING - 2022-09-21 23:22:27 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-09-21T23:22:27.822+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-21T23:22:27.831+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=match_assembler, task_id=odds_collector_task, execution_date=20220921T232218, start_date=20220921T232225, end_date=20220921T232227
+[2022-09-21T23:22:27.864+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-21T23:22:27.923+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

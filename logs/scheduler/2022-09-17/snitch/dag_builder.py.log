@@ -1,0 +1,178 @@
+[2022-09-17T09:06:45.010+0000] {processor.py:153} INFO - Started process (PID=107) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:06:45.010+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:06:45.011+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:06:45.011+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:06:45.896+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:06:45.895+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:06:45.896+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:06:45.922+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.914 seconds
+[2022-09-17T09:07:15.989+0000] {processor.py:153} INFO - Started process (PID=128) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:15.989+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:07:15.989+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:07:15.989+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:16.465+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:07:16.465+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:07:16.465+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:16.478+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.492 seconds
+[2022-09-17T09:07:46.520+0000] {processor.py:153} INFO - Started process (PID=157) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:46.521+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:07:46.521+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:07:46.521+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:47.180+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:07:47.179+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:07:47.180+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:07:47.196+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.677 seconds
+[2022-09-17T09:08:17.288+0000] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:17.289+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:08:17.290+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:08:17.289+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:17.753+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:08:17.752+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:08:17.753+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:17.766+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.481 seconds
+[2022-09-17T09:08:47.827+0000] {processor.py:153} INFO - Started process (PID=215) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:47.828+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:08:47.828+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:08:47.828+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:48.301+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:08:48.301+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:08:48.301+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:08:48.316+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.491 seconds
+[2022-09-17T09:09:18.392+0000] {processor.py:153} INFO - Started process (PID=235) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:18.393+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:09:18.394+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:09:18.393+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:18.858+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:09:18.858+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:09:18.859+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:18.871+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.481 seconds
+[2022-09-17T09:09:48.932+0000] {processor.py:153} INFO - Started process (PID=264) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:48.932+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:09:48.933+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:09:48.933+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:49.491+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:09:49.491+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:09:49.491+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:09:49.505+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.575 seconds
+[2022-09-17T09:10:19.568+0000] {processor.py:153} INFO - Started process (PID=293) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:19.569+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:10:19.569+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:10:19.569+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:20.049+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:10:20.048+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:10:20.049+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:20.061+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.495 seconds
+[2022-09-17T09:10:50.144+0000] {processor.py:153} INFO - Started process (PID=313) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:50.145+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:10:50.145+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:10:50.145+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:50.662+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:10:50.661+0000] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/snitch/dag_builder.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/snitch/dag_builder.py", line 9, in <module>
+    from snitch.main import DEFAULT_HEADERS
+  File "/opt/airflow/dags/snitch/main.py", line 5, in <module>
+    from scrapers.match_collector import MatchCollector
+ModuleNotFoundError: No module named 'scrapers'
+[2022-09-17T09:10:50.662+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:10:50.677+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.535 seconds
+[2022-09-17T09:11:20.758+0000] {processor.py:153} INFO - Started process (PID=342) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:20.759+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:11:20.760+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:20.759+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:21.253+0000] {processor.py:650} INFO - DAG(s) dict_keys(['match_collector']) retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:21.300+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:21.300+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-17T09:11:21.315+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:21.315+0000] {dag.py:2981} INFO - Setting next_dagrun for match_collector to 2022-09-17T00:05:00+00:00, run_after=2022-09-18T00:05:00+00:00
+[2022-09-17T09:11:21.327+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.571 seconds
+[2022-09-17T09:11:51.836+0000] {processor.py:153} INFO - Started process (PID=371) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:51.837+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:11:51.837+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:51.837+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:52.340+0000] {processor.py:650} INFO - DAG(s) dict_keys(['match_collector']) retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:11:52.354+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:52.354+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-17T09:11:52.370+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:11:52.370+0000] {dag.py:2981} INFO - Setting next_dagrun for match_collector to 2022-09-17T00:05:00+00:00, run_after=2022-09-18T00:05:00+00:00
+[2022-09-17T09:11:52.379+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.545 seconds
+[2022-09-17T09:12:22.915+0000] {processor.py:153} INFO - Started process (PID=400) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:22.916+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:12:22.917+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:12:22.917+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:23.505+0000] {processor.py:650} INFO - DAG(s) dict_keys(['match_collector']) retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:23.520+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:12:23.519+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-17T09:12:23.543+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.631 seconds
+[2022-09-17T09:12:53.608+0000] {processor.py:153} INFO - Started process (PID=427) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:53.609+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:12:53.609+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:12:53.609+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:54.104+0000] {processor.py:650} INFO - DAG(s) dict_keys(['match_collector']) retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:12:54.119+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:12:54.119+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-17T09:12:54.135+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:12:54.135+0000] {dag.py:2981} INFO - Setting next_dagrun for match_collector to 2022-09-17T00:05:00+00:00, run_after=2022-09-18T00:05:00+00:00
+[2022-09-17T09:12:54.144+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.538 seconds
+[2022-09-17T09:13:24.808+0000] {processor.py:153} INFO - Started process (PID=449) to work on /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:13:24.809+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/dag_builder.py for tasks to queue
+[2022-09-17T09:13:24.809+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:13:24.809+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:13:25.295+0000] {processor.py:650} INFO - DAG(s) dict_keys(['match_collector']) retrieved from /opt/airflow/dags/snitch/dag_builder.py
+[2022-09-17T09:13:25.308+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:13:25.308+0000] {dag.py:2429} INFO - Sync 1 DAGs
+[2022-09-17T09:13:25.324+0000] {logging_mixin.py:115} INFO - [2022-09-17T09:13:25.324+0000] {dag.py:2981} INFO - Setting next_dagrun for match_collector to 2022-09-17T00:05:00+00:00, run_after=2022-09-18T00:05:00+00:00
+[2022-09-17T09:13:25.333+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/dag_builder.py took 0.528 seconds

@@ -1,0 +1,35 @@
+[2022-09-21T23:24:44.905+0000] {processor.py:153} INFO - Started process (PID=55) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:24:44.906+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:24:44.906+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:24:44.906+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:24:45.665+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:24:45.675+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.773 seconds
+[2022-09-21T23:25:15.745+0000] {processor.py:153} INFO - Started process (PID=83) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:15.745+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:25:15.745+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:25:15.745+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:16.387+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:16.396+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.654 seconds
+[2022-09-21T23:25:46.465+0000] {processor.py:153} INFO - Started process (PID=103) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:46.466+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:25:46.467+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:25:46.467+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:47.041+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:25:47.049+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.586 seconds
+[2022-09-21T23:26:17.114+0000] {processor.py:153} INFO - Started process (PID=132) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:17.115+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:26:17.115+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:26:17.115+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:17.671+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:17.679+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.567 seconds
+[2022-09-21T23:26:47.748+0000] {processor.py:153} INFO - Started process (PID=162) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:47.749+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:26:47.750+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:26:47.750+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:48.358+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:26:48.366+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.620 seconds
+[2022-09-21T23:27:18.435+0000] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:18.436+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:27:18.436+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:27:18.436+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:19.043+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:19.051+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.617 seconds
+[2022-09-21T23:27:49.124+0000] {processor.py:153} INFO - Started process (PID=211) to work on /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:49.125+0000] {processor.py:640} INFO - Processing file /opt/airflow/dags/snitch/operators.py for tasks to queue
+[2022-09-21T23:27:49.125+0000] {logging_mixin.py:115} INFO - [2022-09-21T23:27:49.125+0000] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:49.673+0000] {processor.py:652} WARNING - No viable dags retrieved from /opt/airflow/dags/snitch/operators.py
+[2022-09-21T23:27:49.681+0000] {processor.py:161} INFO - Processing /opt/airflow/dags/snitch/operators.py took 0.559 seconds

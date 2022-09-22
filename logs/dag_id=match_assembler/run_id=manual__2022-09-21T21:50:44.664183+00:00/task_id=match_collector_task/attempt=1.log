@@ -1,0 +1,154 @@
+[2022-09-21T21:50:46.396+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.match_collector_task manual__2022-09-21T21:50:44.664183+00:00 [queued]>
+[2022-09-21T21:50:46.402+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_assembler.match_collector_task manual__2022-09-21T21:50:44.664183+00:00 [queued]>
+[2022-09-21T21:50:46.402+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T21:50:46.403+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-21T21:50:46.403+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-21T21:50:46.415+0000] {taskinstance.py:1389} INFO - Executing <Task(MatchCollectorOperator): match_collector_task> on 2022-09-21 21:50:44.664183+00:00
+[2022-09-21T21:50:46.420+0000] {standard_task_runner.py:52} INFO - Started process 224 to run task
+[2022-09-21T21:50:46.422+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'match_assembler', 'match_collector_task', 'manual__2022-09-21T21:50:44.664183+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/snitch/dag_builder.py', '--cfg-path', '/tmp/tmpjs0f4blq', '--error-file', '/tmp/tmp_1wl9jut']
+[2022-09-21T21:50:46.423+0000] {standard_task_runner.py:80} INFO - Job 372: Subtask match_collector_task
+[2022-09-21T21:50:46.523+0000] {task_command.py:371} INFO - Running <TaskInstance: match_assembler.match_collector_task manual__2022-09-21T21:50:44.664183+00:00 [running]> on host 4eb2200d4764
+[2022-09-21T21:50:46.580+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bookly.beekly@gmail.com
+AIRFLOW_CTX_DAG_OWNER=bookly
+AIRFLOW_CTX_DAG_ID=match_assembler
+AIRFLOW_CTX_TASK_ID=match_collector_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-21T21:50:44.664183+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-21T21:50:44.664183+00:00
+[2022-09-21T21:50:46.587+0000] {log.py:148} INFO - Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T21:50:46.587+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.utils.log] INFO: Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-21T21:50:46.588+0000] {log.py:154} INFO - Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T21:50:46.588+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-21T21:50:46.592+0000] {crawler.py:61} INFO - Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T21:50:46.592+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.crawler] INFO: Overridden settings:
+{'CONCURRENT_REQUESTS': 1}
+[2022-09-21T21:50:46.595+0000] {log.py:159} DEBUG - Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T21:50:46.595+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-21T21:50:46.608+0000] {telnet.py:55} INFO - Telnet Password: 77e47d40e35ac992
+[2022-09-21T21:50:46.608+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.extensions.telnet] INFO: Telnet Password: 77e47d40e35ac992
+[2022-09-21T21:50:46.619+0000] {middleware.py:54} INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T21:50:46.619+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-21T21:50:46.821+0000] {middleware.py:54} INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T21:50:46.822+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-21T21:50:46.827+0000] {middleware.py:54} INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T21:50:46.827+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-21T21:50:46.827+0000] {middleware.py:54} INFO - Enabled item pipelines:
+[]
+[2022-09-21T21:50:46.828+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[2022-09-21T21:50:46.828+0000] {engine.py:316} INFO - Spider opened
+[2022-09-21T21:50:46.828+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:46 [scrapy.core.engine] INFO: Spider opened
+[2022-09-21T21:50:47.037+0000] {logstats.py:48} INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T21:50:47.038+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-21T21:50:47.039+0000] {telnet.py:69} INFO - Telnet console listening on 127.0.0.1:6023
+[2022-09-21T21:50:47.039+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2022-09-21T21:50:47.196+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/?d=3&s=5> (referer: None)
+[2022-09-21T21:50:47.196+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/?d=3&s=5> (referer: None)
+[2022-09-21T21:50:47.913+0000] {match_collector.py:80} INFO - ['logs', 'dags', '***-worker.pid', 'vars', 'plugins', '***.cfg', 'webserver_config.py']
+[2022-09-21T21:50:47.914+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [root] INFO: ['logs', 'dags', '***-worker.pid', 'vars', 'plugins', '***.cfg', 'webserver_config.py']
+[2022-09-21T21:50:47.915+0000] {match_collector.py:83} INFO - ['data.yml', 'final_data.yml']
+[2022-09-21T21:50:47.915+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [root] INFO: ['data.yml', 'final_data.yml']
+[2022-09-21T21:50:47.920+0000] {match_collector.py:89} INFO - Sleeping for 2 secs...
+[2022-09-21T21:50:47.920+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:47 [root] INFO: Sleeping for 2 secs...
+[2022-09-21T21:50:49.930+0000] {scraper.py:275} DEBUG - Scraped from <200 http://www.flashscore.mobi/?d=3&s=5>
+{'KtLrkwg1': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '00:00', 'name': 'Godoy Cruz - Boca Juniors', 'link': 'http://www.flashscore.mobi/match/KtLrkwg1/?d=3&s=5'}, '25QwjJwe': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '00:00', 'name': 'Huracan - Banfield', 'link': 'http://www.flashscore.mobi/match/25QwjJwe/?d=3&s=5'}, 'hGlnIIR4': {'league_name': 'CHINA: Super League', 'time': '11:30', 'name': 'Changchun Yatai - Wuhan FC', 'link': 'http://www.flashscore.mobi/match/hGlnIIR4/?d=3&s=5'}, 'tj02EzRT': {'league_name': 'CHINA: Super League', 'time': '13:30', 'name': 'Dalian Pro - Beijing Guoan', 'link': 'http://www.flashscore.mobi/match/tj02EzRT/?d=3&s=5'}, 'YPdfGddH': {'league_name': 'CHINA: Super League', 'time': '13:30', 'name': 'Wuhan Three Towns - Cangzhou', 'link': 'http://www.flashscore.mobi/match/YPdfGddH/?d=3&s=5'}, '2ReZKKsn': {'league_name': 'CHINA: Super League', 'time': '14:00', 'name': 'Shenzhen - Shandong Taishan', 'link': 'http://www.flashscore.mobi/match/2ReZKKsn/?d=3&s=5'}, 'CjIJnaRt': {'league_name': 'SPAIN: LaLiga2', 'time': '14:00', 'name': 'Huesca - Leganes', 'link': 'http://www.flashscore.mobi/match/CjIJnaRt/?d=3&s=5'}, 'n9AWqcBa': {'league_name': 'SPAIN: LaLiga2', 'time': '16:15', 'name': 'Mirandes - Zaragoza', 'link': 'http://www.flashscore.mobi/match/n9AWqcBa/?d=3&s=5'}, 'YqmebsWE': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '18:00', 'name': 'Defensa y Justicia - Patronato', 'link': 'http://www.flashscore.mobi/match/YqmebsWE/?d=3&s=5'}, '821wBKFK': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '18:00', 'name': 'Sarmiento Junin - Arsenal Sarandi', 'link': 'http://www.flashscore.mobi/match/821wBKFK/?d=3&s=5'}, 'Y56Spwdg': {'league_name': 'SPAIN: LaLiga2', 'time': '18:30', 'name': 'Malaga - Villarreal B', 'link': 'http://www.flashscore.mobi/match/Y56Spwdg/?d=3&s=5'}, 'tW9zqHQ5': {'league_name': 'SPAIN: LaLiga2', 'time': '18:30', 'name': 'Ponferradina - Tenerife', 'link': 'http://www.flashscore.mobi/match/tW9zqHQ5/?d=3&s=5'}, 'OERZjaOl': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '20:30', 'name': 'Lanus - San Lorenzo', 'link': 'http://www.flashscore.mobi/match/OERZjaOl/?d=3&s=5'}, 'UiSViu9r': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '23:00', 'name': 'River Plate - Talleres Cordoba', 'link': 'http://www.flashscore.mobi/match/UiSViu9r/?d=3&s=5'}}
+[2022-09-21T21:50:49.933+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.flashscore.mobi/?d=3&s=5>
+{'KtLrkwg1': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '00:00', 'name': 'Godoy Cruz - Boca Juniors', 'link': 'http://www.flashscore.mobi/match/KtLrkwg1/?d=3&s=5'}, '25QwjJwe': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '00:00', 'name': 'Huracan - Banfield', 'link': 'http://www.flashscore.mobi/match/25QwjJwe/?d=3&s=5'}, 'hGlnIIR4': {'league_name': 'CHINA: Super League', 'time': '11:30', 'name': 'Changchun Yatai - Wuhan FC', 'link': 'http://www.flashscore.mobi/match/hGlnIIR4/?d=3&s=5'}, 'tj02EzRT': {'league_name': 'CHINA: Super League', 'time': '13:30', 'name': 'Dalian Pro - Beijing Guoan', 'link': 'http://www.flashscore.mobi/match/tj02EzRT/?d=3&s=5'}, 'YPdfGddH': {'league_name': 'CHINA: Super League', 'time': '13:30', 'name': 'Wuhan Three Towns - Cangzhou', 'link': 'http://www.flashscore.mobi/match/YPdfGddH/?d=3&s=5'}, '2ReZKKsn': {'league_name': 'CHINA: Super League', 'time': '14:00', 'name': 'Shenzhen - Shandong Taishan', 'link': 'http://www.flashscore.mobi/match/2ReZKKsn/?d=3&s=5'}, 'CjIJnaRt': {'league_name': 'SPAIN: LaLiga2', 'time': '14:00', 'name': 'Huesca - Leganes', 'link': 'http://www.flashscore.mobi/match/CjIJnaRt/?d=3&s=5'}, 'n9AWqcBa': {'league_name': 'SPAIN: LaLiga2', 'time': '16:15', 'name': 'Mirandes - Zaragoza', 'link': 'http://www.flashscore.mobi/match/n9AWqcBa/?d=3&s=5'}, 'YqmebsWE': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '18:00', 'name': 'Defensa y Justicia - Patronato', 'link': 'http://www.flashscore.mobi/match/YqmebsWE/?d=3&s=5'}, '821wBKFK': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '18:00', 'name': 'Sarmiento Junin - Arsenal Sarandi', 'link': 'http://www.flashscore.mobi/match/821wBKFK/?d=3&s=5'}, 'Y56Spwdg': {'league_name': 'SPAIN: LaLiga2', 'time': '18:30', 'name': 'Malaga - Villarreal B', 'link': 'http://www.flashscore.mobi/match/Y56Spwdg/?d=3&s=5'}, 'tW9zqHQ5': {'league_name': 'SPAIN: LaLiga2', 'time': '18:30', 'name': 'Ponferradina - Tenerife', 'link': 'http://www.flashscore.mobi/match/tW9zqHQ5/?d=3&s=5'}, 'OERZjaOl': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '20:30', 'name': 'Lanus - San Lorenzo', 'link': 'http://www.flashscore.mobi/match/OERZjaOl/?d=3&s=5'}, 'UiSViu9r': {'league_name': 'ARGENTINA: Liga Profesional', 'time': '23:00', 'name': 'River Plate - Talleres Cordoba', 'link': 'http://www.flashscore.mobi/match/UiSViu9r/?d=3&s=5'}}
+[2022-09-21T21:50:49.940+0000] {engine.py:361} INFO - Closing spider (finished)
+[2022-09-21T21:50:49.941+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:49 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-09-21T21:50:49.945+0000] {statscollectors.py:47} INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 42075,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.905156,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 21, 50, 49, 942897),
+ 'httpcompression/response_bytes': 287073,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 13,
+ 'memusage/max': 268169216,
+ 'memusage/startup': 268169216,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 9, 21, 21, 50, 47, 37741)}
+[2022-09-21T21:50:49.946+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 42075,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.905156,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 21, 21, 50, 49, 942897),
+ 'httpcompression/response_bytes': 287073,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 13,
+ 'memusage/max': 268169216,
+ 'memusage/startup': 268169216,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 9, 21, 21, 50, 47, 37741)}
+[2022-09-21T21:50:49.947+0000] {engine.py:388} INFO - Spider closed (finished)
+[2022-09-21T21:50:49.947+0000] {logging_mixin.py:115} WARNING - 2022-09-21 21:50:49 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-09-21T21:50:49.949+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-21T21:50:49.959+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=match_assembler, task_id=match_collector_task, execution_date=20220921T215044, start_date=20220921T215046, end_date=20220921T215049
+[2022-09-21T21:50:50.004+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-21T21:50:50.039+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,168 @@
+[2022-09-16T08:27:05.749+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_collector.collector_task scheduled__2022-09-15T00:05:00+00:00 [queued]>
+[2022-09-16T08:27:05.757+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: match_collector.collector_task scheduled__2022-09-15T00:05:00+00:00 [queued]>
+[2022-09-16T08:27:05.758+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-16T08:27:05.758+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2022-09-16T08:27:05.758+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-16T08:27:05.772+0000] {taskinstance.py:1389} INFO - Executing <Task(MatchCollectorOperator): collector_task> on 2022-09-15 00:05:00+00:00
+[2022-09-16T08:27:05.777+0000] {standard_task_runner.py:52} INFO - Started process 118 to run task
+[2022-09-16T08:27:05.779+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'match_collector', 'collector_task', 'scheduled__2022-09-15T00:05:00+00:00', '--job-id', '307', '--raw', '--subdir', 'DAGS_FOLDER/snitch/dag_builder.py', '--cfg-path', '/tmp/tmp75w_v0ah', '--error-file', '/tmp/tmpk8lak7up']
+[2022-09-16T08:27:05.780+0000] {standard_task_runner.py:80} INFO - Job 307: Subtask collector_task
+[2022-09-16T08:27:05.831+0000] {task_command.py:371} INFO - Running <TaskInstance: match_collector.collector_task scheduled__2022-09-15T00:05:00+00:00 [running]> on host 8ed81c66d3de
+[2022-09-16T08:27:05.899+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=bookly.beekly@gmail.com
+AIRFLOW_CTX_DAG_OWNER=bookly
+AIRFLOW_CTX_DAG_ID=match_collector
+AIRFLOW_CTX_TASK_ID=collector_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-15T00:05:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-15T00:05:00+00:00
+[2022-09-16T08:27:05.908+0000] {log.py:148} INFO - Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-16T08:27:05.908+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.utils.log] INFO: Scrapy 2.6.2 started (bot: scrapybot)
+[2022-09-16T08:27:05.908+0000] {log.py:154} INFO - Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-16T08:27:05.908+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.7.13 (default, Aug 23 2022, 10:09:20) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.15.0-47-generic-x86_64-with-debian-11.4
+[2022-09-16T08:27:05.912+0000] {crawler.py:61} INFO - Overridden settings:
+{}
+[2022-09-16T08:27:05.912+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.crawler] INFO: Overridden settings:
+{}
+[2022-09-16T08:27:05.916+0000] {log.py:159} DEBUG - Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-16T08:27:05.916+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-09-16T08:27:05.934+0000] {telnet.py:55} INFO - Telnet Password: 8f1ca85de903a59b
+[2022-09-16T08:27:05.935+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.extensions.telnet] INFO: Telnet Password: 8f1ca85de903a59b
+[2022-09-16T08:27:05.945+0000] {middleware.py:54} INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-16T08:27:05.945+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2022-09-16T08:27:05.990+0000] {middleware.py:54} INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-16T08:27:05.991+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-09-16T08:27:05.993+0000] {middleware.py:54} INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-16T08:27:05.994+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-09-16T08:27:05.994+0000] {middleware.py:54} INFO - Enabled item pipelines:
+[]
+[2022-09-16T08:27:05.994+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+[2022-09-16T08:27:05.994+0000] {engine.py:316} INFO - Spider opened
+[2022-09-16T08:27:05.994+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:05 [scrapy.core.engine] INFO: Spider opened
+[2022-09-16T08:27:06.201+0000] {logstats.py:48} INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-16T08:27:06.201+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-09-16T08:27:06.202+0000] {telnet.py:69} INFO - Telnet console listening on 127.0.0.1:6023
+[2022-09-16T08:27:06.203+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2022-09-16T08:27:06.567+0000] {engine.py:294} DEBUG - Crawled (200) <GET http://www.flashscore.mobi/?d=1&s=5> (referer: None)
+[2022-09-16T08:27:06.567+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.flashscore.mobi/?d=1&s=5> (referer: None)
+[2022-09-16T08:27:18.213+0000] {scraper.py:176} ERROR - Spider error processing <GET http://www.flashscore.mobi/?d=1&s=5> (referer: None)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 67, in _parse
+    return self.parse(response, **kwargs)
+  File "/opt/airflow/dags/snitch/scrapers/match_collector.py", line 44, in parse
+    new_match_coefs = self.fill_coefs_list(match_coefs, match_statuses)
+  File "/opt/airflow/dags/snitch/scrapers/match_collector.py", line 84, in fill_coefs_list
+    final_coefs_list[ind] = match_coefs.pop(0)
+IndexError: pop from empty list
+[2022-09-16T08:27:18.214+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.flashscore.mobi/?d=1&s=5> (referer: None)
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.7/site-packages/twisted/internet/defer.py", line 892, in _runCallbacks
+    current.result, *args, **kwargs
+  File "/home/***/.local/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 67, in _parse
+    return self.parse(response, **kwargs)
+  File "/opt/***/dags/snitch/scrapers/match_collector.py", line 44, in parse
+    new_match_coefs = self.fill_coefs_list(match_coefs, match_statuses)
+  File "/opt/***/dags/snitch/scrapers/match_collector.py", line 84, in fill_coefs_list
+    final_coefs_list[ind] = match_coefs.pop(0)
+IndexError: pop from empty list
+[2022-09-16T08:27:18.314+0000] {engine.py:361} INFO - Closing spider (finished)
+[2022-09-16T08:27:18.315+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:18 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-09-16T08:27:18.315+0000] {statscollectors.py:47} INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 57794,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 12.113796,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 16, 8, 27, 18, 315357),
+ 'httpcompression/response_bytes': 575029,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 265347072,
+ 'memusage/startup': 265347072,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2022, 9, 16, 8, 27, 6, 201561)}
+[2022-09-16T08:27:18.315+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 227,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 57794,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 12.113796,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 9, 16, 8, 27, 18, 315357),
+ 'httpcompression/response_bytes': 575029,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'memusage/max': 265347072,
+ 'memusage/startup': 265347072,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2022, 9, 16, 8, 27, 6, 201561)}
+[2022-09-16T08:27:18.316+0000] {engine.py:388} INFO - Spider closed (finished)
+[2022-09-16T08:27:18.316+0000] {logging_mixin.py:115} WARNING - 2022-09-16 08:27:18 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-09-16T08:27:18.317+0000] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-16T08:27:18.326+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=match_collector, task_id=collector_task, execution_date=20220915T000500, start_date=20220916T082705, end_date=20220916T082718
+[2022-09-16T08:27:18.359+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-16T08:27:18.382+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
