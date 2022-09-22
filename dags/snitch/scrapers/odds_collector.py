@@ -1,3 +1,4 @@
+import logging
 import scrapy
 import yaml
 
@@ -37,13 +38,16 @@ class OddsCollector(scrapy.Spider):
             self.matches = yaml.safe_load(stream)
             matches = deepcopy(self.matches)
             for match_id, match_data in matches.items():
-                yield scrapy.Request(match_data.get('link'), callback=self.parse, meta={'match_id': match_id})
+                yield scrapy.Request(
+                    match_data.get('link').replace('https://www.flashscore.com', 'http://www.flashscore.mobi'),
+                    callback=self.parse, meta={'match_id': match_id})
 
     def parse(self, response):
         match_id = response.meta['match_id']
         odds = response.xpath('//p[@class="p-set odds-detail"]/a/text()').extract() or ['0', '0', '0']
         odd_t1 = float(odds[0])
         odd_t2 = float(odds[2])
+        logging.info(f"Match - {match_id}, odds: {odd_t1}, {odd_t2}")
         fav = check_for_favorite(odd_t1, odd_t2)
         if fav:
             self.matches[match_id]['fav'] = fav

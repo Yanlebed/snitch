@@ -1,4 +1,5 @@
 import logging
+import telebot
 
 from datetime import datetime, timedelta
 from os.path import abspath, dirname
@@ -12,6 +13,10 @@ from snitch.scrapers.details_collector import DetailsCollector
 from snitch.scrapers.odds_collector import OddsCollector
 from snitch.operators import MatchCollectorOperator, DetailsCollectorOperator, OddsCollectorOperator, \
     TelegramPostOperator, SheetEditorOperator
+
+bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
+bot_chat_id = 354467348
+bot = telebot.TeleBot(bot_token)
 
 dags_dir = dirname(abspath(__file__))
 
@@ -30,7 +35,8 @@ dag = DAG('match_assembler', schedule_interval='05 0 * * *', default_args=defaul
           orientation='LR')
 match_collector_task = MatchCollectorOperator(dag=dag, task_id='match_collector_task')
 odds_collector_task = OddsCollectorOperator(dag=dag, task_id='odds_collector_task')
-telegram_post_task = TelegramPostOperator(dag=dag, task_id='telegram_post_task')
+telegram_post_task = TelegramPostOperator(dag=dag, task_id='telegram_post_task',
+                                          op_kwargs={'bot': bot, 'chat_id': bot_chat_id})
 sheet_editor_task = SheetEditorOperator(dag=dag, task_id='sheet_editor_task')
 
 odds_collector_task.set_upstream(match_collector_task)

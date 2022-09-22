@@ -1,11 +1,11 @@
 import logging
 import os
-import telebot
 import yaml
 
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 from scrapy.crawler import CrawlerProcess
+from time import sleep
 
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
@@ -80,17 +80,11 @@ class TelegramPostOperator(PythonOperator):
             *args,
             **kwargs)
 
-    @staticmethod
-    def send_matches():
+    def send_matches(self, bot=None, chat_id='default'):
         # h8LzH7rQ8tcdJjP
         file_path = 'vars'
         output_file_name = 'final_data.yml'
-
         message_template = "Match: {teams}\n{link}\n Odds: {odds_team_1} - {odds_team_2}\n"
-        bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
-        bot_chat_id = 354467348
-        bot = telebot.TeleBot(bot_token)
-
         matches_path = f"{file_path}/{output_file_name}"
         logging.info('Opening matches file at {}'.format(matches_path))
         with open(matches_path, 'r') as file_to_read:
@@ -98,13 +92,14 @@ class TelegramPostOperator(PythonOperator):
             logging.info(matches_dict)
             for match_id, match_data in matches_dict.items():
                 logging.info('Sending message...')
+                sleep(0.3)
                 message_to_send = message_template.format(
                     teams=match_data.get('name'),
                     link=match_data.get('link'),
                     odds_team_1=match_data.get('t1'),
                     odds_team_2=match_data.get('t2')
                 )
-                bot.send_message(chat_id=bot_chat_id, text=message_to_send)
+                bot.send_message(chat_id=chat_id, text=message_to_send)
 
 
 class SheetEditorOperator(PythonOperator):
