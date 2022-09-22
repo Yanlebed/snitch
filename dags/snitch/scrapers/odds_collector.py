@@ -6,6 +6,7 @@ from copy import deepcopy
 # for remote run
 from snitch.utils import check_for_favorite
 
+
 # for local run
 # from dags.snitch.utils import check_for_favorite
 
@@ -46,6 +47,8 @@ class OddsCollector(scrapy.Spider):
         fav = check_for_favorite(odd_t1, odd_t2)
         if fav:
             self.matches[match_id]['fav'] = fav
+            self.matches[match_id]['t1'] = odd_t1
+            self.matches[match_id]['t2'] = odd_t2
         else:
             del self.matches[match_id]
 

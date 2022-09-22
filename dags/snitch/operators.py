@@ -4,6 +4,7 @@ import telebot
 import yaml
 
 from airflow.operators.python_operator import PythonOperator
+from datetime import datetime
 from scrapy.crawler import CrawlerProcess
 
 from googleapiclient.discovery import build
@@ -81,10 +82,11 @@ class TelegramPostOperator(PythonOperator):
 
     @staticmethod
     def send_matches():
+        # h8LzH7rQ8tcdJjP
         file_path = 'vars'
         output_file_name = 'final_data.yml'
 
-        message_template = "Match: {teams}\n{link}\n Odds: {odds_team_1} - {odds_team_2}\nExpected goals: 1.1 - 2.2"
+        message_template = "Match: {teams}\n{link}\n Odds: {odds_team_1} - {odds_team_2}\n"
         bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
         bot_chat_id = 354467348
         bot = telebot.TeleBot(bot_token)
@@ -99,8 +101,8 @@ class TelegramPostOperator(PythonOperator):
                 message_to_send = message_template.format(
                     teams=match_data.get('name'),
                     link=match_data.get('link'),
-                    odds_team_1=match_data.get('odds_team_1'),
-                    odds_team_2=match_data.get('odds_team_2')
+                    odds_team_1=match_data.get('t1'),
+                    odds_team_2=match_data.get('t2')
                 )
                 bot.send_message(chat_id=bot_chat_id, text=message_to_send)
 
@@ -130,8 +132,7 @@ class SheetEditorOperator(PythonOperator):
 
         # here enter the id of your sheet
         SAMPLE_SPREADSHEET_ID_input = '1iGYmQJkirhmfW0NW13_xd51pVmxk7iBH27dDLI_syds'
-        # SAMPLE_RANGE_NAME = 'A1:AA1000'
-        SAMPLE_RANGE_NAME = 'Sheet2!A1:E5'
+        SAMPLE_RANGE_NAME = 'A2:H1000'
         service = build('sheets', 'v4', credentials=creds)
 
         # Call the Sheets API
@@ -143,15 +144,41 @@ class SheetEditorOperator(PythonOperator):
 
         logging.info(values_input)
 
-        some_list = [[123, 'ABC'], [345, 'DEF'], [678, 'GHI']]
+        general_list_to_write = []
+        matches_path = "vars/final_data.yml"
+        logging.info('Opening matches file at {}'.format(matches_path))
+
+        todays_date = datetime.today().strftime('%d-%m-%Y')
+
+        with open(matches_path, 'r') as file_to_read:
+            matches_dict = yaml.safe_load(file_to_read)
+            logging.info(matches_dict)
+            for match_id, match_data in matches_dict.items():
+                general_list_to_write.append(
+                    [
+                        match_id,
+                        todays_date,
+                        match_data.get('time', 'N/A'),
+                        match_data.get('league_name', 'N/A'),
+                        match_data.get('name', 'N/A'),
+                        match_data.get('link', 'N/A'),
+                        match_data.get('t1', 'N/A'),
+                        match_data.get('t2', 'N/A'),
+                        match_data.get('fav', 'N/A'),
+                    ]
+                )
+
 
         # https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/update
-        request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID_input, range=SAMPLE_RANGE_NAME,
-                                        valueInputOption="USER_ENTERED", body={'values': some_list})
-        response = request.execute()
+        # request = sheet.values().update(spreadsheetId=SAMPLE_SPREADSHEET_ID_input, range=SAMPLE_RANGE_NAME,
+        #                                 valueInputOption="USER_ENTERED", body={'values': general_list_to_write})
+
+        append_request = sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID_input, range=SAMPLE_RANGE_NAME,
+                                        valueInputOption="USER_ENTERED", body={'values': general_list_to_write})
+
+        response = append_request.execute()
         logging.info(response)
 
 
         #TODO: separate write/update methods in operator; get to result in writing/editing matches to spreadsheet
         #TODO: consider separate dag for checking schedule row in the spreadsheet
-        #TODO: deploy to portainer

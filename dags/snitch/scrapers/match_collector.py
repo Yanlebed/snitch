@@ -15,9 +15,9 @@ from snitch.utils import check_for_favorite
 class MatchCollector(scrapy.Spider):
     name = 'match_collector'
     start_urls = [
-        'http://www.flashscore.mobi/?d=3&s=5'  # the next day page with odds
+        'http://www.flashscore.mobi/?d=1&s=5'  # the next day page with odds
     ]
-    base_link = 'http://www.flashscore.mobi'
+    base_link = 'https://www.flashscore.com'
 
     allowed_leagues = ['ARGENTINA: Liga Profesional', 'ARGENTINA: Copa Argentina', 'AUSTRALIA: A-League',
                        'AUSTRIA: Bundesliga', 'BELGIUM: Jupiler Pro League', 'BRAZIL: Serie A',

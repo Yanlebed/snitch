@@ -1,3 +1,6 @@
+import yaml
+
+
 def get_impact_of_escalation(escalation_rank, percent):
     return next(
         el['impact_value'] for el in escalation_rank if float(el['upper_bound']) > percent > float(el['lower_bound']))
@@ -25,6 +28,6 @@ def get_coefs(page_data):
     return [coef_t1, coef_t2]
 
 
-def sort_matches():
+def sort_matches(match_dict=None):
     with open('/home/asus/PycharmProjects/snitch/data.yml', 'r') as file_to_read:
-        yaml.dump(match_dict, outfile, default_flow_style=False)
+        yaml.dump(match_dict, file_to_read, default_flow_style=False)
