@@ -238,6 +238,7 @@ services:
     user: "0:0"
     volumes:
       - .:/sources
+    depends_on: []
 
   airflow-cli:
     <<: *airflow-common
