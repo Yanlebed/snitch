@@ -1,6 +1,5 @@
 import logging
 import operator
-from playwright.sync_api import sync_playwright
 from collections import OrderedDict, Counter
 from math import ceil
 
@@ -52,18 +51,19 @@ class DetailsCollector(object):
         self.fav = None
 
     def parse(self):
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=False, slow_mo=500)
-            page = browser.new_page()
-
-            # page.goto(first_half_link) # 'https://www.flashscore.com/match/vFsBsev0/#/match-summary'
-            page.goto('https://www.flashscore.com/match/vFsBsev0/#/match-summary')
-
-            self.fav = check_for_favorite(page)
-
-            if not self.fav:
-                logging.info('No favourite in this match')
-                return None
+        pass
+        # with sync_playwright() as p:
+        #     browser = p.chromium.launch(headless=False, slow_mo=500)
+        #     page = browser.new_page()
+        #
+        #     # page.goto(first_half_link) # 'https://www.flashscore.com/match/vFsBsev0/#/match-summary'
+        #     page.goto('https://www.flashscore.com/match/vFsBsev0/#/match-summary')
+        #
+        #     self.fav = check_for_favorite(page)
+        #
+        #     if not self.fav:
+        #         logging.info('No favourite in this match')
+        #         return None
 
     #         stats[fav]['Fav'] = True
     #

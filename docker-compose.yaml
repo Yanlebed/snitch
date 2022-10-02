@@ -58,7 +58,7 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- Scrapy httplib2 apiclient PyYAML telegram twilio playwright pyTelegramBotAPI google-api-python-client google-auth-httplib2 google-auth-oauthlib}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- Scrapy backoff httplib2 apiclient PyYAML telegram twilio selenium pyTelegramBotAPI google-api-python-client google-auth-httplib2 google-auth-oauthlib}
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
@@ -274,6 +274,16 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+
+  selenium:
+    container_name: 'selenium'
+    image: 'selenium/standalone-chrome:3.141'
+
+  google:
+    container_name: 'google-selenium'
+    image: 'google-selenium-robust'
+    depends_on:
+      - selenium
 
 volumes:
   postgres-db-volume:

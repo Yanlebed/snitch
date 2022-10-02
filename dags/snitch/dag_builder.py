@@ -12,7 +12,7 @@ from snitch.scrapers.match_collector import MatchCollector
 from snitch.scrapers.details_collector import DetailsCollector
 from snitch.scrapers.odds_collector import OddsCollector
 from snitch.operators import MatchCollectorOperator, DetailsCollectorOperator, OddsCollectorOperator, \
-    TelegramPostOperator, SheetEditorOperator
+    TelegramPostOperator, ExpectedCounterOperator, SheetEditorOperator
 
 bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
 bot_chat_id = 354467348
@@ -37,10 +37,12 @@ match_collector_task = MatchCollectorOperator(dag=dag, task_id='match_collector_
 odds_collector_task = OddsCollectorOperator(dag=dag, task_id='odds_collector_task')
 telegram_post_task = TelegramPostOperator(dag=dag, task_id='telegram_post_task',
                                           op_kwargs={'bot': bot, 'chat_id': bot_chat_id})
+expected_goals_counter_task = ExpectedCounterOperator(dag=dag, task_id='expected_goals_counter_task')
 sheet_editor_task = SheetEditorOperator(dag=dag, task_id='sheet_editor_task')
 
 odds_collector_task.set_upstream(match_collector_task)
-telegram_post_task.set_upstream(odds_collector_task)
+expected_goals_counter_task.set_upstream(odds_collector_task)
+telegram_post_task.set_upstream(expected_goals_counter_task)
 sheet_editor_task.set_upstream(telegram_post_task)
 
 globals()['match_collector'] = dag
