@@ -31,7 +31,7 @@ default_args = {
     'retries': 0,
     'retry_delay': timedelta(minutes=5),
 }
-dag = DAG('match_assembler', schedule_interval='05 0 * * *', default_args=default_args, max_active_runs=1,
+dag = DAG('match_assembler', schedule_interval='50 21 * * *', default_args=default_args, max_active_runs=1,
           orientation='LR')
 match_collector_task = MatchCollectorOperator(dag=dag, task_id='match_collector_task')
 odds_collector_task = OddsCollectorOperator(dag=dag, task_id='odds_collector_task')

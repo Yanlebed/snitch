@@ -121,7 +121,7 @@ class TelegramPostOperator(PythonOperator):
         # h8LzH7rQ8tcdJjP
         sleep(2)
         file_path = 'vars'
-        output_file_name = 'final_data.yml'
+        output_file_name = 'data_with_expected.yml'
         message_template = "Match: {teams}\n{link}\n Odds: {odds_team_1} - {odds_team_2}\n" \
                            "Expected goals: {t1_exp_goals} - {t2_exp_goals}"
         matches_path = f"{file_path}/{output_file_name}"
@@ -137,8 +137,8 @@ class TelegramPostOperator(PythonOperator):
                     link=match_data.get('link'),
                     odds_team_1=match_data.get('t1'),
                     odds_team_2=match_data.get('t2'),
-                    exp_goals_team_1=match_data.get('t1_exp_goals'),
-                    exp_goals_team_2=match_data.get('t2_exp_goals'),
+                    t1_exp_goals=match_data.get('t1_exp_goals'),
+                    t2_exp_goals=match_data.get('t2_exp_goals'),
                 )
                 bot.send_message(chat_id=chat_id, text=message_to_send)
 
@@ -160,18 +160,17 @@ class ExpectedCounterOperator(PythonOperator):
         for ind, goals_and_qty in enumerate(goals_list):
             if goals_and_qty[1] >= 2:
                 pairs_qty += 1
-        logging.info('pairs_qty - {}'.format(pairs_qty))
 
         for ind, goals_and_qty in enumerate(goals_list):  # {3: 3, 2: 0, 1: 1, 0: 0}
+            goals, qty = int(goals_and_qty[0]), goals_and_qty[1]
             if ind == 0:
-                final_score_to_return = goals_and_qty[0]
-                score_to_return = goals_and_qty[0]
-                logging.info('ind = 0, score_to_return = {}'.format(score_to_return))
+                final_score_to_return = goals
+                score_to_return = goals
             else:
-                if goals_and_qty[0] < score_to_return:
-                    final_score_to_return -= DICT_OF_DECIMAL_PARTS[goals_and_qty[1]]
+                if goals < score_to_return:
+                    final_score_to_return -= DICT_OF_DECIMAL_PARTS[qty]
                 else:
-                    final_score_to_return += DICT_OF_DECIMAL_PARTS[goals_and_qty[1]]
+                    final_score_to_return += DICT_OF_DECIMAL_PARTS[qty]
 
         return final_score_to_return
 
@@ -247,17 +246,16 @@ class ExpectedCounterOperator(PythonOperator):
 
                     # page.goto(req_link)
                     tree = browser.page_source
-                    h2h_blocks = fromstring(tree).xpath('//div[@class="h2h__section section "]')
-                    logging.info(h2h_blocks)
+                    h2h_blocks = fromstring(tree).xpath('//div[contains(@class, "h2h__section")]')
                     logging.info(len(h2h_blocks))
                     for ind, h2h_block in enumerate(h2h_blocks):
-                        rows = h2h_block.xpath('//div[@class="h2h__row"]')
+                        rows = h2h_block.xpath('div[@class="rows"]/div[@class="h2h__row"]')[:5]
                         if ind == 0:
                             # t1 results
                             for row in rows:
-                                results = row.xpath('//span[@class="h2h__result"]/span/text()')
+                                results = row.xpath('span[@class="h2h__result"]/span/text()')
                                 home_play = row.xpath(
-                                    '//span[@class="h2h__homeParticipant h2h__participant highlighted"]')
+                                    'span[@class="h2h__homeParticipant h2h__participant highlighted"]')
                                 if home_play:
                                     t1_scores_goals.append(results[0])
                                     t1_concedes_goals.append(results[1])
@@ -267,9 +265,9 @@ class ExpectedCounterOperator(PythonOperator):
                         elif ind == 1:
                             # t2 results
                             for row in rows:
-                                results = row.xpath('//span[@class="h2h__result"]/span/text()')
+                                results = row.xpath('span[@class="h2h__result"]/span/text()')
                                 home_play = row.xpath(
-                                    '//span[@class="h2h__homeParticipant h2h__participant highlighted"]')
+                                    'span[@class="h2h__homeParticipant h2h__participant highlighted"]')
                                 if home_play:
                                     t2_scores_goals.append(results[0])
                                     t2_concedes_goals.append(results[1])
@@ -283,44 +281,17 @@ class ExpectedCounterOperator(PythonOperator):
                             logging.info(t2_concedes_goals)
                             break
 
-                        # h2h_blocks = page.query_selector_all('//div[@class="h2h__section section "]')
-                #         for ind, h2h_block in enumerate(h2h_blocks):
-                #             rows = h2h_block.query_selector_all('//div[@class="h2h__row"]')
-                #             if ind == 0:
-                #                 # t1 results
-                #                 for row in rows:
-                #                     results = row.query_selector('//span[@class="h2h__result"]/span').inner_text()
-                #                     home_play = row.query_selector(
-                #                         '//span[@class="h2h__homeParticipant h2h__participant highlighted"]')
-                #                     if home_play:
-                #                         t1_scores_goals.append(results[0])
-                #                         t1_concedes_goals.append(results[1])
-                #                     else:
-                #                         t1_scores_goals.append(results[1])
-                #                         t1_concedes_goals.append(results[0])
-                #             elif ind == 1:
-                #                 # t2 results
-                #                 for row in rows:
-                #                     results = row.query_selector('//span[@class="h2h__result"]/span').inner_text()
-                #                     home_play = row.query_selector(
-                #                         '//span[@class="h2h__homeParticipant h2h__participant highlighted"]')
-                #                     if home_play:
-                #                         t2_scores_goals.append(results[0])
-                #                         t2_concedes_goals.append(results[1])
-                #                     else:
-                #                         t2_scores_goals.append(results[1])
-                #                         t2_concedes_goals.append(results[0])
-                #             else:
-                #                 break
-                #
-                #         t1_score = self.get_score(t1_scores_goals, t1_concedes_goals, match_data['fav'])
-                #         t2_score = self.get_score(t2_scores_goals, t2_concedes_goals, match_data['fav'])
-                #
-                #         new_matches_dict[match_id]['t1_exp_goals'] = t1_score
-                #         new_matches_dict[match_id]['t2_exp_goals'] = t2_score
-                #
-                # logging.info('Saving new_matches_dict to {}'.format(new_file_name))
-                # yaml.dump(new_matches_dict, file_to_write, default_flow_style=False)
+                    t1_score = self.get_score(t1_scores_goals, t1_concedes_goals, match_data['fav'])
+                    t2_score = self.get_score(t2_scores_goals, t2_concedes_goals, match_data['fav'])
+
+                    logging.info(t1_score)
+                    logging.info(t2_score)
+
+                    new_matches_dict[match_id]['t1_exp_goals'] = t1_score
+                    new_matches_dict[match_id]['t2_exp_goals'] = t2_score
+
+                logging.info('Saving new_matches_dict to {}'.format(new_file_name))
+                yaml.dump(new_matches_dict, file_to_write, default_flow_style=False)
 
 
 class SheetEditorOperator(PythonOperator):
