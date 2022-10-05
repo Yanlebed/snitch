@@ -332,7 +332,7 @@ class SheetEditorOperator(PythonOperator):
         logging.info(values_input)
 
         general_list_to_write = []
-        matches_path = "vars/final_data.yml"
+        matches_path = "vars/data_with_expected.yml"
         logging.info('Opening matches file at {}'.format(matches_path))
 
         todays_date = datetime.today().strftime('%d-%m-%Y')
