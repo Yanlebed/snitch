@@ -1,18 +1,15 @@
-import logging
 import telebot
 
 from datetime import datetime, timedelta
 from os.path import abspath, dirname
 
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-from scrapy.crawler import CrawlerProcess
-from snitch.main import DEFAULT_HEADERS
-from snitch.scrapers.match_collector import MatchCollector
-from snitch.scrapers.details_collector import DetailsCollector
-from snitch.scrapers.odds_collector import OddsCollector
-from snitch.operators import MatchCollectorOperator, DetailsCollectorOperator, OddsCollectorOperator, \
-    TelegramPostOperator, ExpectedCounterOperator, SheetEditorOperator
+from snitch.operators.match_collector_operator import MatchCollectorOperator
+from snitch.operators.details_collector_operator import DetailsCollectorOperator
+from snitch.operators.odds_collector_operator import OddsCollectorOperator
+from snitch.operators.telegram_post_operator import TelegramPostOperator
+from snitch.operators.expected_counter_operator import ExpectedCounterOperator
+from snitch.operators.sheet_editor_operator import SheetEditorOperator
 
 bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
 bot_chat_id = 354467348
