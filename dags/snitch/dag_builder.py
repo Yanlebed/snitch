@@ -10,6 +10,8 @@ from snitch.operators.odds_collector_operator import OddsCollectorOperator
 from snitch.operators.telegram_post_operator import TelegramPostOperator
 from snitch.operators.expected_counter_operator import ExpectedCounterOperator
 from snitch.operators.sheet_editor_operator import SheetEditorOperator
+from snitch.operators.in_live_operator import InLiveOperator
+
 
 bot_token = '5775727156:AAFji3qtTLvO4ZmFIOsLuAEsDCeM30XT7dw'
 bot_chat_id = 354467348
@@ -42,4 +44,10 @@ expected_goals_counter_task.set_upstream(odds_collector_task)
 telegram_post_task.set_upstream(expected_goals_counter_task)
 sheet_editor_task.set_upstream(telegram_post_task)
 
-globals()['match_collector'] = dag
+
+in_live_dag = DAG('in_live', default_args=default_args, max_active_runs=1, orientation='LR')
+in_live_task = InLiveOperator(dag=in_live_dag, task_id='in_live_task')
+
+
+globals()['match_assembler'] = dag
+globals()['in_live'] = dag
