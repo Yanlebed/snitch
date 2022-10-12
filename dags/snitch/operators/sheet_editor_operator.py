@@ -1,3 +1,4 @@
+import jmespath
 import logging
 import os
 import yaml
@@ -56,6 +57,7 @@ class SheetEditorOperator(PythonOperator):
             matches_dict = yaml.safe_load(file_to_read)
             logging.info(matches_dict)
             for match_id, match_data in matches_dict.items():
+                stats = match_data[match_id]['first_half_stats']
                 general_list_to_write.append(
                     [
                         match_id,
@@ -69,6 +71,16 @@ class SheetEditorOperator(PythonOperator):
                         match_data.get('t1_exp_goals', 'N/A'),
                         match_data.get('t2_exp_goals', 'N/A'),
                         match_data.get('fav', 'N/A'),
+                        jmespath.search('Home.Shots on Goal', stats),
+                        jmespath.search('Away.Shots on Goal', stats),
+                        jmespath.search('Home.Shots off Goal', stats),
+                        jmespath.search('Away.Shots off Goal', stats),
+                        jmespath.search('Home.Corner Kicks', stats),
+                        jmespath.search('Away.Corner Kicks', stats),
+                        jmespath.search('Home.Red Cards', stats),
+                        jmespath.search('Away.Red Cards', stats),
+                        jmespath.search('Home.Dangerous Attacks', stats),
+                        jmespath.search('Away.Dangerous Attacks', stats),
                     ]
                 )
 
