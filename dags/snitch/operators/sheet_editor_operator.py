@@ -27,14 +27,14 @@ class SheetEditorOperator(PythonOperator):
         file_path = 'dags/snitch'
         SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
         SERVICE_ACCOUNT_FILE = f'{file_path}/keys.json'
-        logging.info(os.listdir())
 
         creds = None
         creds = service_account.Credentials.from_service_account_file(
             SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
         # here enter the id of your sheet
-        SAMPLE_SPREADSHEET_ID_input = '1iGYmQJkirhmfW0NW13_xd51pVmxk7iBH27dDLI_syds'
+        # SAMPLE_SPREADSHEET_ID_input = '1iGYmQJkirhmfW0NW13_xd51pVmxk7iBH27dDLI_syds'
+        SAMPLE_SPREADSHEET_ID_input = '1IhbD2n5B18stfWYXONWgJsYZd1ROTJE1sUeriSjmlxo'
         SAMPLE_RANGE_NAME = 'A2:H1000'
         service = build('sheets', 'v4', credentials=creds)
 
@@ -48,7 +48,8 @@ class SheetEditorOperator(PythonOperator):
         logging.info(values_input)
 
         general_list_to_write = []
-        matches_path = "vars/data_with_expected.yml"
+        # matches_path = "vars/data_with_expected.yml"
+        matches_path = 'vars/match_with_stats.yml'
         logging.info('Opening matches file at {}'.format(matches_path))
 
         todays_date = datetime.today().strftime('%d-%m-%Y')

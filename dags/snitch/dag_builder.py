@@ -47,6 +47,8 @@ sheet_editor_task.set_upstream(telegram_post_task)
 
 in_live_dag = DAG('in_live', default_args=default_args, max_active_runs=1, orientation='LR')
 in_live_task = InLiveOperator(dag=in_live_dag, task_id='in_live_task')
+new_sheet_editor_task = SheetEditorOperator(dag=in_live_dag, task_id='sheet_editor_task')
+new_sheet_editor_task.set_upstream(in_live_task)
 
 
 globals()['match_assembler'] = dag

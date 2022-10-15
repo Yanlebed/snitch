@@ -15,19 +15,19 @@ STATS = {
     'Minute': None,
     'Home': {
         'Fav': False,
-        'Shots on Goal': None,
-        'Shots off Goal': None,
-        'Corner Kicks': None,
-        'Red Cards': None,
-        'Dangerous Attacks': None,
+        'Shots on Goal': '',
+        'Shots off Goal': '',
+        'Corner Kicks': '',
+        'Red Cards': '',
+        'Dangerous Attacks': '',
     },
     'Away': {
         'Fav': False,
-        'Shots on Goal': None,
-        'Shots off Goal': None,
-        'Corner Kicks': None,
-        'Red Cards': None,
-        'Dangerous Attacks': None,
+        'Shots on Goal': '',
+        'Shots off Goal': '',
+        'Corner Kicks': '',
+        'Red Cards': '',
+        'Dangerous Attacks': '',
     },
 }
 
@@ -57,86 +57,97 @@ class InLiveOperator(PythonOperator):
         new_file_name = f'{file_path}/match_with_stats.yml'
         matches_path = f"{file_path}/{output_file_name}"
         logging.info('Opening matches file at {}'.format(matches_path))
-        # with open(matches_path, 'r') as file_to_read:
-        #     with open(new_file_name, 'w') as file_to_write:
-        #         matches_dict = yaml.safe_load(file_to_read)
-        #         matches_dict_with_stats = deepcopy(matches_dict)
-        #         logging.info(matches_dict)
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s %(message)s'
-        )
-        #
-        logging.getLogger('urllib3').setLevel(logging.ERROR)
-        SELENIUM_URL = "selenium:4444"
+        with open(matches_path, 'r') as file_to_read:
+            with open(new_file_name, 'w') as file_to_write:
+                #         matches_dict = yaml.safe_load(file_to_read)
+                #         matches_dict_with_stats = deepcopy(matches_dict)
+                #         logging.info(matches_dict)
+                logging.basicConfig(
+                    level=logging.INFO,
+                    format='%(asctime)s %(message)s'
+                )
+                #
+                logging.getLogger('urllib3').setLevel(logging.ERROR)
+                SELENIUM_URL = "selenium:4444"
 
-        @backoff.on_exception(
-            backoff.expo,
-            urllib3.exceptions.MaxRetryError,
-            max_tries=5,
-            jitter=None
-        )
-        def selenium_connect(url):
-            return webdriver.Remote(url, {'browserName': 'chrome'})
+                @backoff.on_exception(
+                    backoff.expo,
+                    urllib3.exceptions.MaxRetryError,
+                    max_tries=5,
+                    jitter=None
+                )
+                def selenium_connect(url):
+                    return webdriver.Remote(url, {'browserName': 'chrome'})
 
-        try:
-            browser = selenium_connect(f"http://{SELENIUM_URL}/wd/hub")
-        except urllib3.exceptions.MaxRetryError:
-            logging.error("Unable to connect to Selenium.")
-            sys.exit(1)
+                try:
+                    browser = selenium_connect(f"http://{SELENIUM_URL}/wd/hub")
+                except urllib3.exceptions.MaxRetryError:
+                    logging.error("Unable to connect to Selenium.")
+                    sys.exit(1)
 
-        # for match_id, match_data in matches_dict.items():
-        # req_link = f"{match_data['link']}#/match-summary/match-summary"
-        #browser.get(req_link)
-        browser.get('https://www.flashscore.com/match/Oj1bhsH8/#/match-summary/match-summary')
-        sleep(5)
-        # logging.info(f"req_link: {req_link}.")
-        logging.info(f"Retrieved URL: {browser.current_url}.")
+                # for match_id, match_data in matches_dict.items():
+                # req_link = f"{match_data['link']}#/match-summary/match-summary"
+                #browser.get(req_link)
+                browser.get('https://www.flashscore.com/match/08nF1lLp/#/match-summary/match-summary')
+                sleep(5)
+                # logging.info(f"req_link: {req_link}.")
+                logging.info(f"Retrieved URL: {browser.current_url}.")
 
-        tree = browser.page_source
-        logging.info(tree)
+                tree = browser.page_source
+                #logging.info(tree)
 
-        half = int(fromstring(tree).xpath('//span[@class="fixedHeaderDuel__detailStatus"]/text()')[0])
-        match_minutes = int(fromstring(tree).xpath('//span[@class="eventTime"]/text()')[0])
+                half = fromstring(tree).xpath('//span[@class="fixedHeaderDuel__detailStatus"]/text()')[0]
+                try:
+                    half_number = int(next(el for el in half if el.isdigit()))
+                except StopIteration:
+                    half_number = None
 
-        logging.info(half)
-        logging.info(match_minutes)
+                try:
+                    match_minutes = fromstring(tree).xpath('//span[@class="eventTime"]/text()')[0]
+                except:
+                    match_minutes = 'Half Time'
 
-        incidents = fromstring(tree).xpath('//div[@class="smv__incident"]')
-        logging.info(len(incidents))
+                logging.info(half_number)
+                logging.info(match_minutes)
 
-        # for incident in incidents:
-        #     inc_icon = incident.xpath('div[@class="smv__incidentIcon"]')
+                incidents = fromstring(tree).xpath('//div[@class="smv__incident"]')
+                logging.info(len(incidents))
 
-        # retrieve first half stats
-        browser.get(browser.current_url.replace('#/match-summary/match-summary',
-                                                '#/match-summary/match-statistics/1'))
-        sleep(3)
-        first_half_tree = browser.page_source
-        logging.info(first_half_tree)
-        stats_categories = fromstring(first_half_tree).xpath('//div[@class="stat__category"]')
+                # for incident in incidents:
+                #     inc_icon = incident.xpath('div[@class="smv__incidentIcon"]')
 
-        stats = deepcopy(STATS)
-        for category in stats_categories:
-            category_name = category.xpath('div[@class="stat__categoryName"]/text()')[0]
-            if 'shots on goal' in category_name.lower():
-                stats['Home']['Shots on Goal'] = category.xpath('//div[@class="stat__homeValue"]/text()')[0]
-                stats['Away']['Shots on Goal'] = category.xpath('//div[@class="stat__awayValue"]/text()')[0]
-            elif 'shots off goal' in category_name.lower():
-                stats['Home']['Shots off Goal'] = category.xpath('//div[@class="stat__homeValue"]/text()')[0]
-                stats['Away']['Shots off Goal'] = category.xpath('//div[@class="stat__awayValue"]/text()')[0]
-            elif 'corner kicks' in category_name.lower():
-                stats['Home']['Corner Kicks'] = category.xpath('//div[@class="stat__homeValue"]/text()')[0]
-                stats['Away']['Corner Kicks'] = category.xpath('//div[@class="stat__awayValue"]/text()')[0]
-            elif 'red cards' in category_name.lower():
-                stats['Home']['Red Cards'] = category.xpath('//div[@class="stat__homeValue"]/text()')[0]
-                stats['Away']['Red Cards'] = category.xpath('//div[@class="stat__awayValue"]/text()')[0]
-            elif 'dangerous attacks' in category_name.lower():
-                stats['Home']['Dangerous Attacks'] = category.xpath('//div[@class="stat__homeValue"]/text()')[0]
-                stats['Away']['Dangerous Attacks'] = category.xpath('//div[@class="stat__awayValue"]/text()')[0]
+                # retrieve first half stats
+                browser.get(browser.current_url.replace('#/match-summary/match-summary',
+                                                        '#/match-summary/match-statistics/1'))
+                sleep(3)
+                first_half_tree = browser.page_source
+                #logging.info(first_half_tree)
+                stats_categories = fromstring(first_half_tree).xpath('//div[@class="stat__category"]')
+                logging.info(stats_categories)
 
-        # matches_dict_with_stats[match_id]['first_half_stats'] = stats
-        logging.info(stats)
-        # logging.info('Saving matches_dict_with_stats to {}'.format(new_file_name))
-        # logging.info(matches_dict_with_stats)
-        # yaml.dump(matches_dict_with_stats, file_to_write, default_flow_style=False)
+                stats = deepcopy(STATS)
+                for category in stats_categories:
+                    category_name = category.xpath('div[@class="stat__categoryName"]/text()')[0]
+                    logging.info(category_name)
+                    if 'shots on goal' in category_name.lower():
+                        stats['Home']['Shots on Goal'] = str(category.xpath('div[@class="stat__homeValue"]/text()')[0])
+                        stats['Away']['Shots on Goal'] = str(category.xpath('div[@class="stat__awayValue"]/text()')[0])
+                    elif 'shots off goal' in category_name.lower():
+                        stats['Home']['Shots off Goal'] = str(category.xpath('div[@class="stat__homeValue"]/text()')[0])
+                        stats['Away']['Shots off Goal'] = str(category.xpath('div[@class="stat__awayValue"]/text()')[0])
+                    elif 'corner kicks' in category_name.lower():
+                        stats['Home']['Corner Kicks'] = str(category.xpath('div[@class="stat__homeValue"]/text()')[0])
+                        stats['Away']['Corner Kicks'] = str(category.xpath('div[@class="stat__awayValue"]/text()')[0])
+                    elif 'red cards' in category_name.lower():
+                        stats['Home']['Red Cards'] = str(category.xpath('div[@class="stat__homeValue"]/text()')[0])
+                        stats['Away']['Red Cards'] = str(category.xpath('div[@class="stat__awayValue"]/text()')[0])
+                    elif 'dangerous attacks' in category_name.lower():
+                        stats['Home']['Dangerous Attacks'] = str(category.xpath('div[@class="stat__homeValue"]/text()')[0])
+                        stats['Away']['Dangerous Attacks'] = str(category.xpath('div[@class="stat__awayValue"]/text()')[0])
+
+                stats['test_id']['first_half_stats'] = stats
+                logging.info(stats)
+                logging.info('Saving matches_dict_with_stats to {}'.format(new_file_name))
+                yaml.dump(stats, file_to_write, default_flow_style=False)
+                # logging.info(matches_dict_with_stats)
+                # yaml.dump(matches_dict_with_stats, file_to_write, default_flow_style=False)
